@@ -28,6 +28,6 @@ function removeElementFromBeginningOfArray (myArray, element){
 }
 
 function destructivelyRemoveElementFromBeginningOfArray (myArray){
-  myArray.unshift(element);
+  myArray.unshift("element");
   return myArray
 }

@@ -9,6 +9,10 @@ function destructivelyAddElementToBeginningOfArray (myArray, element){
   return myArray
 }
 
+function accessElementInArray(myArray, index) {
+  return myArray[index]
+}
+
 function addElementToEndOfArray (myArray, element){
     return [...myArray, element];
 };
@@ -18,8 +22,9 @@ function destructivelyAddElementToEndOfArray (myArray, element){
   return myArray
 }
 
-function accessElementInArray(myArray, index) {
-  return myArray[index]
+function destructivelyRemoveElementFromBeginningOfArray (myArray){
+  myArray.shift()
+  return myArray
 }
 
 function removeElementFromBeginningOfArray (myArray, element){
@@ -27,6 +32,6 @@ function removeElementFromBeginningOfArray (myArray, element){
   return myArray
 }
 
-function destructivelyRemoveElementFromBeginningOfArray (array){
-  return array.slice(1)
-}
+function destructivelyRemoveElementFromBeginningOfArray (myArray){
+  return myArray.slice(1)
+} 
